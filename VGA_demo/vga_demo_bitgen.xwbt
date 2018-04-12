@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Archana\Documents\USC_Spring18\EE354\VGA_demo\vga_demo.ncd
+OUTFILE=C:\Users\Archana\Documents\USC_Spring18\EE354\VGA_demo\vga_demo.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\Archana\Documents\USC_Spring18\EE354\VGA_demo
+LICENSE=WebPack
+USER_INFO=174127445_174127446_210653472_101
