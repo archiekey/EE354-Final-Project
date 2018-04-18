@@ -1,0 +1,29 @@
+Command line:
+   vgademo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51109
+
+Thu Apr 12 14:34:18 2018
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 1512.5 Meg
+
+ Total Signals          : 101
+ Total Nets             : 95
+ Total Signal Drivers   : 56
+ Total Blocks           : 10
+ Total Primitive Blocks : 8
+ Total Processes        : 58
+ Total Traceable Variables  : 44
+ Total Scalar Nets and Variables : 325
+Total Line Count : 133
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 1512.5 Meg
+
+Thu Apr 12 14:34:36 2018
+

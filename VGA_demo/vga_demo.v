@@ -47,26 +47,38 @@
 	/////////////////////////////////////////////////////////////////
 	reg [9:0] position;
 	reg [9:0] score;
+	reg [9:0] score2;
+	wire [9:0] totscore;
 	reg [9:0] bulposx;
 	reg [9:0] bulposx1;
 	reg [9:0] bulposx2;
 	reg [9:0] bulposx3;
+	reg [9:0] endgame;
+	reg [9:0] endgameblock;
+	reg [9:0] endgameblock2;
+	reg [9:0] endgame2;
 	always @(posedge DIV_CLK[20])
 		begin
 			if(reset)
-				position<=240;
+				position<=20;
 			else if(btnD && ~btnU)
 				position<=position+2;
 			else if(btnU && ~btnD)
 				position<=position-2;	
 		end
 	
-	always @(posedge DIV_CLK[19])
+	always @(posedge DIV_CLK[18])
 		begin
 			if(reset)
 				bulposx <= 0;
 			else if(bulposx <= 480)
-				bulposx <= bulposx + 1;
+				begin
+					bulposx <= bulposx + 1;
+					if((bulposx == 320) && ((position > 200 && position < 215)  || (position > 370 && position < 385) || (position > 140 && position < 155)))
+						endgame <= 1;
+					else
+						endgame <= 0;
+				end
 			else
 				begin
 					score <= score + 1;
@@ -74,27 +86,45 @@
 				end
 		end
 		
-		always @(posedge DIV_CLK[18])
+		always @(posedge DIV_CLK[19])
 		begin
 			if(reset)
 				bulposx2 <= 0;
 			else if(bulposx2 <= 480)
-				bulposx2 <= bulposx2 + 1;
+				begin
+					bulposx2 <= bulposx2 + 1;
+					if((bulposx2 == 320) && ((position > 140 && position < 150)  || (position > 250 && position < 260) || (position > 300 && position < 310)))
+						endgame2 <= 1;
+					else
+						endgame2 <= 0;
+				end
 			else
 				begin
-					score <= score + 1;
+					score2 <= score2 + 1;
 					bulposx2 <= 0;
 				end
 		end
+		always @(posedge endgame[0])
+		begin
+			if(reset)
+				endgameblock <= 0;
+			else
+				endgameblock <= 1;
 		
+		end
+		always @(posedge endgame2[0])
+		begin
+			if(reset)
+				endgameblock2 <= 0;
+			else
+				endgameblock2 <= 1;
+		
+		end
 	
-		
-	wire R = CounterY>=(position-10) && CounterY<=(position+10) && CounterX[8:5]==5;
-	wire G = (CounterX>=(bulposx-5) && CounterX<=(bulposx+5) && CounterY[8:5]==3) || 
-	(CounterX>=(bulposx1-5) && CounterX<=(bulposx1+5) && CounterY[7:4]==2)|| 
-	(CounterX>=(bulposx2-5) && CounterX<=(bulposx2+5) && CounterY[7:4]==3);//|| 
-	//(CounterX>=(bulposx3-5) && CounterX<=(bulposx3+5) && CounterY[7:4]==5); //CounterX>100 && CounterX<200 && CounterY[5:3]==7;
-	wire B = (CounterX>=(bulposx-5) && CounterX<=(bulposx+5) && CounterY[6:4]==5);
+	assign totscore = score + score2;
+	wire R = CounterY>=(position-10) && CounterY<=(position+10) && (CounterX>280&&  CounterX< 320);
+	wire G = (CounterX>=(bulposx-5) && CounterX<=(bulposx+5) && ((CounterY > 200 && CounterY < 215)  || (CounterY > 370 && CounterY < 385) || (CounterY > 140 && CounterY < 155)) ); 
+	wire B = ((CounterX>=(bulposx2-5) && CounterX<=(bulposx2+5) && ((CounterY < 140 && CounterY > 150) || (CounterY > 250 && CounterY < 260) || (CounterY >300 && CounterY < 310) )) || ((CounterX >100) && (CounterX < 300) && CounterY[5:3]==7 && (endgameblock == 1|| endgameblock2 == 1)));
 	
 	always @(posedge clk)
 	begin
@@ -144,7 +174,7 @@
 	
 	assign SSD3 = 4'b1111;
 	assign SSD2 = 4'b1111;
-	assign SSD1 = 4'b1111;
+	assign SSD1 = totscore[3:0];
 	assign SSD0 = position[3:0];
 	
 	// need a scan clk for the seven segment display 

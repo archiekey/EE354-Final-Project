@@ -5,11 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="112" delta="unknown" >"C:/Users/Archana/Documents/USC_Spring18/EE354/VGA_demo/vga_demo.v" Line 74: */ outside comment
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/Archana/Documents/USC_Spring18/EE354/VGA_demo/vga_demo.v" Line 6: Module &lt;<arg fmt="%s" index="1">vga_demo</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 
