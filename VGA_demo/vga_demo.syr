@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: vga_demo.prj
 
@@ -155,8 +155,8 @@ WARNING:Xst:653 - Signal <state> is used but never assigned. This sourceless sig
     Found 1-bit register for signal <vga_g>.
     Found 1-bit register for signal <vga_b>.
     Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_60_OUT> created at line 125.
-    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_66_OUT> created at line 126.
-    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_76_OUT> created at line 127.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_71_OUT> created at line 126.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_81_OUT> created at line 127.
     Found 28-bit adder for signal <DIV_CLK[27]_GND_1_o_add_0_OUT> created at line 32.
     Found 10-bit adder for signal <position[9]_GND_1_o_add_4_OUT> created at line 65.
     Found 10-bit adder for signal <bulposx[9]_GND_1_o_add_12_OUT> created at line 76.
@@ -164,15 +164,11 @@ WARNING:Xst:653 - Signal <state> is used but never assigned. This sourceless sig
     Found 10-bit adder for signal <bulposx2[9]_GND_1_o_add_33_OUT> created at line 95.
     Found 10-bit adder for signal <score2[9]_GND_1_o_add_42_OUT> created at line 103.
     Found 10-bit adder for signal <totscore> created at line 124.
-    Found 11-bit adder for signal <n0220> created at line 125.
-    Found 11-bit adder for signal <n0225> created at line 126.
-    Found 11-bit adder for signal <n0230> created at line 127.
+    Found 11-bit adder for signal <n0219> created at line 125.
+    Found 11-bit adder for signal <n0227> created at line 126.
+    Found 11-bit adder for signal <n0232> created at line 127.
     Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_6_OUT<9:0>> created at line 67.
     Found 16x7-bit Read Only RAM for signal <SSD_CATHODES>
-    Found 1-bit 3-to-1 multiplexer for signal <SSD<3>> created at line 208.
-    Found 1-bit 3-to-1 multiplexer for signal <SSD<2>> created at line 208.
-    Found 1-bit 3-to-1 multiplexer for signal <SSD<1>> created at line 208.
-    Found 1-bit 3-to-1 multiplexer for signal <SSD<0>> created at line 208.
     Found 10-bit comparator greater for signal <n0014> created at line 74
     Found 10-bit comparator greater for signal <GND_1_o_position[9]_LessThan_15_o> created at line 77
     Found 10-bit comparator greater for signal <position[9]_GND_1_o_LessThan_16_o> created at line 77
@@ -190,24 +186,24 @@ WARNING:Xst:653 - Signal <state> is used but never assigned. This sourceless sig
     Found 11-bit comparator lessequal for signal <n0075> created at line 125
     Found 10-bit comparator greater for signal <GND_1_o_CounterX[9]_LessThan_64_o> created at line 125
     Found 10-bit comparator greater for signal <CounterX[9]_GND_1_o_LessThan_65_o> created at line 125
-    Found 32-bit comparator lessequal for signal <n0083> created at line 126
-    Found 11-bit comparator lessequal for signal <n0086> created at line 126
-    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_70_o> created at line 126
-    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_71_o> created at line 126
-    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_72_o> created at line 126
-    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_73_o> created at line 126
-    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_74_o> created at line 126
-    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_75_o> created at line 126
-    Found 32-bit comparator lessequal for signal <n0102> created at line 127
-    Found 11-bit comparator lessequal for signal <n0105> created at line 127
-    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_80_o> created at line 127
-    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_81_o> created at line 127
-    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_82_o> created at line 127
-    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_83_o> created at line 127
-    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_84_o> created at line 127
+    Found 10-bit comparator greater for signal <GND_1_o_CounterX[9]_LessThan_66_o> created at line 125
+    Found 10-bit comparator greater for signal <CounterX[9]_GND_1_o_LessThan_67_o> created at line 125
+    Found 32-bit comparator lessequal for signal <n0093> created at line 126
+    Found 11-bit comparator lessequal for signal <n0096> created at line 126
+    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_75_o> created at line 126
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_76_o> created at line 126
+    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_77_o> created at line 126
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_78_o> created at line 126
+    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_79_o> created at line 126
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_80_o> created at line 126
+    Found 32-bit comparator lessequal for signal <n0112> created at line 127
+    Found 11-bit comparator lessequal for signal <n0115> created at line 127
     Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_85_o> created at line 127
-    Found 10-bit comparator greater for signal <GND_1_o_CounterX[9]_LessThan_86_o> created at line 127
-    Found 10-bit comparator greater for signal <CounterX[9]_GND_1_o_LessThan_87_o> created at line 127
+    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_86_o> created at line 127
+    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_87_o> created at line 127
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_88_o> created at line 127
+    Found 10-bit comparator greater for signal <GND_1_o_CounterY[9]_LessThan_89_o> created at line 127
+    Found 10-bit comparator greater for signal <CounterY[9]_GND_1_o_LessThan_90_o> created at line 127
     Summary:
 	inferred   1 RAM(s).
 	inferred  13 Adder/Subtractor(s).
@@ -256,7 +252,7 @@ Macro Statistics
  11-bit comparator lessequal                           : 3
  32-bit comparator lessequal                           : 3
 # Multiplexers                                         : 4
- 1-bit 3-to-1 multiplexer                              : 4
+ 1-bit 2-to-1 multiplexer                              : 4
 
 =========================================================================
 
@@ -264,15 +260,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <endgameblock2_9> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_8> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_7> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_6> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_5> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_4> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_3> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_2> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <endgameblock2_1> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <endgameblock_9> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <endgameblock_8> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <endgameblock_7> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
@@ -282,6 +269,15 @@ WARNING:Xst:1710 - FF/Latch <endgameblock_4> (without init value) has a constant
 WARNING:Xst:1710 - FF/Latch <endgameblock_3> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <endgameblock_2> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <endgameblock_1> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_9> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_8> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_7> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_6> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_5> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_4> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_3> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_2> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <endgameblock2_1> (without init value) has a constant value of 0 in block <vga_demo>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <endgame_1> of sequential type is unconnected in block <vga_demo>.
 WARNING:Xst:2677 - Node <endgame_2> of sequential type is unconnected in block <vga_demo>.
 WARNING:Xst:2677 - Node <endgame_3> of sequential type is unconnected in block <vga_demo>.
@@ -368,7 +364,7 @@ Macro Statistics
  11-bit comparator lessequal                           : 3
  32-bit comparator lessequal                           : 3
 # Multiplexers                                         : 4
- 1-bit 3-to-1 multiplexer                              : 4
+ 1-bit 2-to-1 multiplexer                              : 4
 
 =========================================================================
 
@@ -438,16 +434,16 @@ Top Level Output File Name         : vga_demo.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 483
+# BELS                             : 484
 #      BUF                         : 3
 #      GND                         : 1
 #      INV                         : 12
 #      LUT1                        : 60
-#      LUT2                        : 37
-#      LUT3                        : 26
-#      LUT4                        : 90
+#      LUT2                        : 39
+#      LUT3                        : 27
+#      LUT4                        : 83
 #      LUT5                        : 45
-#      LUT6                        : 51
+#      LUT6                        : 56
 #      MUXCY                       : 90
 #      VCC                         : 1
 #      XORCY                       : 67
@@ -473,14 +469,14 @@ Selected Device : 6slx45csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              87  out of  54576     0%  
- Number of Slice LUTs:                  321  out of  27288     1%  
-    Number used as Logic:               321  out of  27288     1%  
+ Number of Slice LUTs:                  322  out of  27288     1%  
+    Number used as Logic:               322  out of  27288     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    324
-   Number with an unused Flip Flop:     237  out of    324    73%  
-   Number with an unused LUT:             3  out of    324     0%  
-   Number of fully used LUT-FF pairs:    84  out of    324    25%  
+ Number of LUT Flip Flop pairs used:    325
+   Number with an unused Flip Flop:     238  out of    325    73%  
+   Number with an unused LUT:             3  out of    325     0%  
+   Number of fully used LUT-FF pairs:    84  out of    325    25%  
    Number of unique control sets:        11
 
 IO Utilization: 
@@ -529,9 +525,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.948ns (Maximum Frequency: 253.315MHz)
+   Minimum period: 3.925ns (Maximum Frequency: 254.797MHz)
    Minimum input arrival time before clock: 5.661ns
-   Maximum output required time after clock: 6.921ns
+   Maximum output required time after clock: 8.208ns
    Maximum combinational path delay: 6.500ns
 
 Timing Details:
@@ -540,10 +536,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_CLK_1'
-  Clock period: 3.948ns (frequency: 253.315MHz)
-  Total number of paths / destination ports: 646 / 28
+  Clock period: 3.925ns (frequency: 254.797MHz)
+  Total number of paths / destination ports: 658 / 28
 -------------------------------------------------------------------------
-Delay:               3.948ns (Levels of Logic = 3)
+Delay:               3.925ns (Levels of Logic = 3)
   Source:            syncgen/CounterX_6 (FF)
   Destination:       syncgen/CounterX_0 (FF)
   Source Clock:      DIV_CLK_1 rising
@@ -553,21 +549,21 @@ Delay:               3.948ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              16   0.447   1.349  syncgen/CounterX_6 (syncgen/CounterX_6)
-     LUT5:I0->O            1   0.203   0.580  syncgen/CounterX[9]_PWR_3_o_equal_2_o<9>_SW0 (N19)
+     FD:C->Q              15   0.447   1.326  syncgen/CounterX_6 (syncgen/CounterX_6)
+     LUT5:I0->O            1   0.203   0.580  syncgen/CounterX[9]_PWR_3_o_equal_2_o<9>_SW0 (N21)
      LUT6:I5->O           10   0.205   0.857  syncgen/CounterX[9]_PWR_3_o_equal_2_o<9> (syncgen/CounterX[9]_PWR_3_o_equal_2_o)
      LUT3:I2->O            1   0.205   0.000  syncgen/CounterX_0_rstpot (syncgen/CounterX_0_rstpot)
      FD:D                      0.102          syncgen/CounterX_0
     ----------------------------------------
-    Total                      3.948ns (1.162ns logic, 2.786ns route)
-                                       (29.4% logic, 70.6% route)
+    Total                      3.925ns (1.162ns logic, 2.763ns route)
+                                       (29.6% logic, 70.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ClkPort'
-  Clock period: 2.279ns (frequency: 438.702MHz)
+  Clock period: 2.259ns (frequency: 442.664MHz)
   Total number of paths / destination ports: 231 / 21
 -------------------------------------------------------------------------
-Delay:               2.279ns (Levels of Logic = 4)
+Delay:               2.259ns (Levels of Logic = 4)
   Source:            DIV_CLK_18 (FF)
   Destination:       DIV_CLK_20 (FF)
   Source Clock:      ClkPort rising
@@ -577,22 +573,22 @@ Delay:               2.279ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             23   0.447   1.154  DIV_CLK_18 (DIV_CLK_18)
+     FDC:C->Q             22   0.447   1.134  DIV_CLK_18 (DIV_CLK_18)
      LUT1:I0->O            1   0.205   0.000  Mcount_DIV_CLK_cy<18>_rt (Mcount_DIV_CLK_cy<18>_rt)
      MUXCY:S->O            1   0.172   0.000  Mcount_DIV_CLK_cy<18> (Mcount_DIV_CLK_cy<18>)
      MUXCY:CI->O           0   0.019   0.000  Mcount_DIV_CLK_cy<19> (Mcount_DIV_CLK_cy<19>)
      XORCY:CI->O           1   0.180   0.000  Mcount_DIV_CLK_xor<20> (Result<20>)
      FDC:D                     0.102          DIV_CLK_20
     ----------------------------------------
-    Total                      2.279ns (1.125ns logic, 1.154ns route)
-                                       (49.4% logic, 50.6% route)
+    Total                      2.259ns (1.125ns logic, 1.134ns route)
+                                       (49.8% logic, 50.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_CLK_20'
-  Clock period: 3.703ns (frequency: 270.084MHz)
+  Clock period: 3.684ns (frequency: 271.455MHz)
   Total number of paths / destination ports: 58 / 10
 -------------------------------------------------------------------------
-Delay:               3.703ns (Levels of Logic = 3)
+Delay:               3.684ns (Levels of Logic = 3)
   Source:            position_1 (FF)
   Destination:       position_8 (FF)
   Source Clock:      DIV_CLK_20 rising
@@ -602,14 +598,14 @@ Delay:               3.703ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            24   0.447   1.277  position_1 (position_1)
-     LUT5:I3->O            4   0.203   0.684  Maccum_position_cy<5>12_SW0 (N25)
-     LUT5:I4->O            1   0.205   0.580  Maccum_position_cy<5>12_SW2 (N31)
+     FDRE:C->Q            23   0.447   1.258  position_1 (position_1)
+     LUT5:I3->O            4   0.203   0.684  Maccum_position_cy<5>12_SW0 (N27)
+     LUT5:I4->O            1   0.205   0.580  Maccum_position_cy<5>12_SW2 (N35)
      LUT6:I5->O            1   0.205   0.000  Maccum_position_xor<7>11 (Result<7>1)
      FDRE:D                    0.102          position_7
     ----------------------------------------
-    Total                      3.703ns (1.162ns logic, 2.541ns route)
-                                       (31.4% logic, 68.6% route)
+    Total                      3.684ns (1.162ns logic, 2.522ns route)
+                                       (31.5% logic, 68.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_CLK_19'
@@ -733,8 +729,8 @@ Offset:              4.594ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            18   1.222   1.394  btnD_IBUF (btnD_IBUF)
-     LUT5:I0->O            4   0.203   0.684  Maccum_position_cy<5>12_SW0 (N25)
-     LUT5:I4->O            1   0.205   0.580  Maccum_position_cy<5>12_SW2 (N31)
+     LUT5:I0->O            4   0.203   0.684  Maccum_position_cy<5>12_SW0 (N27)
+     LUT5:I4->O            1   0.205   0.580  Maccum_position_cy<5>12_SW2 (N35)
      LUT6:I5->O            1   0.205   0.000  Maccum_position_xor<7>11 (Result<7>1)
      FDRE:D                    0.102          position_7
     ----------------------------------------
@@ -829,89 +825,72 @@ Offset:              4.382ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ClkPort'
-  Total number of paths / destination ports: 64 / 11
+  Total number of paths / destination ports: 72 / 11
 -------------------------------------------------------------------------
-Offset:              6.542ns (Levels of Logic = 3)
-  Source:            DIV_CLK_18 (FF)
-  Destination:       Cf (PAD)
+Offset:              8.208ns (Levels of Logic = 5)
+  Source:            DIV_CLK_19 (FF)
+  Destination:       Cd (PAD)
   Source Clock:      ClkPort rising
 
-  Data Path: DIV_CLK_18 to Cf
+  Data Path: DIV_CLK_19 to Cd
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             23   0.447   1.518  DIV_CLK_18 (DIV_CLK_18)
-     LUT6:I0->O            7   0.203   1.021  Mmux_SSD<3>11 (SSD<3>)
-     LUT4:I0->O            1   0.203   0.579  Mram_SSD_CATHODES111 (Cf_OBUF)
-     OBUF:I->O                 2.571          Cf_OBUF (Cf)
+     FDC:C->Q             22   0.447   1.238  DIV_CLK_19 (DIV_CLK_19)
+     LUT2:I0->O            8   0.203   0.803  ssdscan_clk[1]_ssdscan_clk[0]_AND_35_o1 (ssdscan_clk[1]_ssdscan_clk[0]_AND_35_o)
+     LUT6:I5->O            7   0.205   1.138  Mmux_SSD<2>11 (SSD<2>)
+     LUT6:I0->O            2   0.203   0.617  Mram_SSD_CATHODES61 (Ca_OBUF)
+     LUT6:I5->O            1   0.205   0.579  Mram_SSD_CATHODES3 (Cd_OBUF)
+     OBUF:I->O                 2.571          Cd_OBUF (Cd)
     ----------------------------------------
-    Total                      6.542ns (3.424ns logic, 3.118ns route)
-                                       (52.3% logic, 47.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_20'
-  Total number of paths / destination ports: 21 / 7
--------------------------------------------------------------------------
-Offset:              6.502ns (Levels of Logic = 3)
-  Source:            position_3 (FF)
-  Destination:       Cf (PAD)
-  Source Clock:      DIV_CLK_20 rising
-
-  Data Path: position_3 to Cf
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:C->Q            22   0.447   1.478  position_3 (position_3)
-     LUT6:I1->O            7   0.203   1.021  Mmux_SSD<3>11 (SSD<3>)
-     LUT4:I0->O            1   0.203   0.579  Mram_SSD_CATHODES111 (Cf_OBUF)
-     OBUF:I->O                 2.571          Cf_OBUF (Cf)
-    ----------------------------------------
-    Total                      6.502ns (3.424ns logic, 3.078ns route)
-                                       (52.7% logic, 47.3% route)
+    Total                      8.208ns (3.834ns logic, 4.374ns route)
+                                       (46.7% logic, 53.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_18'
-  Total number of paths / destination ports: 70 / 7
+  Total number of paths / destination ports: 80 / 7
 -------------------------------------------------------------------------
-Offset:              6.921ns (Levels of Logic = 4)
-  Source:            score_1 (FF)
-  Destination:       Ca (PAD)
+Offset:              8.005ns (Levels of Logic = 5)
+  Source:            score_0 (FF)
+  Destination:       Cd (PAD)
   Source Clock:      DIV_CLK_18 rising
 
-  Data Path: score_1 to Ca
+  Data Path: score_0 to Cd
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.447   0.788  score_1 (score_1)
-     LUT2:I0->O            1   0.203   0.924  Madd_totscore_Madd_lut<1>1 (Madd_totscore_Madd_lut<1>)
-     LUT6:I1->O            7   0.203   1.002  Mmux_SSD<1>11 (SSD<1>)
-     LUT4:I1->O            1   0.205   0.579  Mram_SSD_CATHODES61 (Ca_OBUF)
-     OBUF:I->O                 2.571          Ca_OBUF (Ca)
+     FDE:C->Q              5   0.447   0.819  score_0 (score_0)
+     LUT2:I0->O            7   0.203   1.021  Madd_totscore_Madd_cy<0>11 (Madd_totscore_Madd_cy<0>)
+     LUT6:I2->O            7   0.203   1.138  Mmux_SSD<2>11 (SSD<2>)
+     LUT6:I0->O            2   0.203   0.617  Mram_SSD_CATHODES61 (Ca_OBUF)
+     LUT6:I5->O            1   0.205   0.579  Mram_SSD_CATHODES3 (Cd_OBUF)
+     OBUF:I->O                 2.571          Cd_OBUF (Cd)
     ----------------------------------------
-    Total                      6.921ns (3.629ns logic, 3.292ns route)
-                                       (52.4% logic, 47.6% route)
+    Total                      8.005ns (3.832ns logic, 4.173ns route)
+                                       (47.9% logic, 52.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_CLK_19'
-  Total number of paths / destination ports: 70 / 7
+  Total number of paths / destination ports: 80 / 7
 -------------------------------------------------------------------------
-Offset:              6.819ns (Levels of Logic = 4)
-  Source:            score2_1 (FF)
-  Destination:       Ca (PAD)
+Offset:              7.903ns (Levels of Logic = 5)
+  Source:            score2_0 (FF)
+  Destination:       Cd (PAD)
   Source Clock:      DIV_CLK_19 rising
 
-  Data Path: score2_1 to Ca
+  Data Path: score2_0 to Cd
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              4   0.447   0.684  score2_1 (score2_1)
-     LUT2:I1->O            1   0.205   0.924  Madd_totscore_Madd_lut<1>1 (Madd_totscore_Madd_lut<1>)
-     LUT6:I1->O            7   0.203   1.002  Mmux_SSD<1>11 (SSD<1>)
-     LUT4:I1->O            1   0.205   0.579  Mram_SSD_CATHODES61 (Ca_OBUF)
-     OBUF:I->O                 2.571          Ca_OBUF (Ca)
+     FDE:C->Q              5   0.447   0.715  score2_0 (score2_0)
+     LUT2:I1->O            7   0.205   1.021  Madd_totscore_Madd_cy<0>11 (Madd_totscore_Madd_cy<0>)
+     LUT6:I2->O            7   0.203   1.138  Mmux_SSD<2>11 (SSD<2>)
+     LUT6:I0->O            2   0.203   0.617  Mram_SSD_CATHODES61 (Ca_OBUF)
+     LUT6:I5->O            1   0.205   0.579  Mram_SSD_CATHODES3 (Cd_OBUF)
+     OBUF:I->O                 2.571          Cd_OBUF (Cd)
     ----------------------------------------
-    Total                      6.819ns (3.631ns logic, 3.188ns route)
-                                       (53.2% logic, 46.8% route)
+    Total                      7.903ns (3.834ns logic, 4.069ns route)
+                                       (48.5% logic, 51.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -942,7 +921,7 @@ Clock to Setup on destination clock ClkPort
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ClkPort        |    2.279|         |         |         |
+ClkPort        |    2.259|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_1
@@ -950,12 +929,12 @@ Clock to Setup on destination clock DIV_CLK_1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_1      |    3.948|         |         |         |
+DIV_CLK_1      |    3.925|         |         |         |
 DIV_CLK_18     |    5.640|         |         |         |
 DIV_CLK_19     |    5.623|         |         |         |
-DIV_CLK_20     |    5.650|         |         |         |
-endgame2_0     |    3.576|         |         |         |
-endgame_0      |    3.596|         |         |         |
+DIV_CLK_20     |    5.862|         |         |         |
+endgame2_0     |    2.860|         |         |         |
+endgame_0      |    2.840|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_18
@@ -964,7 +943,7 @@ Clock to Setup on destination clock DIV_CLK_18
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 DIV_CLK_18     |    3.790|         |         |         |
-DIV_CLK_20     |    6.108|         |         |         |
+DIV_CLK_20     |    6.087|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DIV_CLK_19
@@ -981,14 +960,14 @@ Clock to Setup on destination clock DIV_CLK_20
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_CLK_20     |    3.703|         |         |         |
+DIV_CLK_20     |    3.684|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.11 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.94 secs
  
 --> 
 

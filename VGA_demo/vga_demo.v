@@ -122,7 +122,7 @@
 		end
 	
 	assign totscore = score + score2;
-	wire R = CounterY>=(position-10) && CounterY<=(position+10) && (CounterX>280&&  CounterX< 320);
+	wire R = CounterY>=(position-10) && CounterY<=(position+10) && (CounterX>280&&  CounterX< 320) || ((CounterX >100) && (CounterX < 300) && CounterY[5:3]==7 && (endgameblock == 1|| endgameblock2 == 1));
 	wire G = (CounterX>=(bulposx-5) && CounterX<=(bulposx+5) && ((CounterY > 200 && CounterY < 215)  || (CounterY > 370 && CounterY < 385) || (CounterY > 140 && CounterY < 155)) ); 
 	wire B = ((CounterX>=(bulposx2-5) && CounterX<=(bulposx2+5) && ((CounterY < 140 && CounterY > 150) || (CounterY > 250 && CounterY < 260) || (CounterY >300 && CounterY < 310) )) || ((CounterX >100) && (CounterX < 300) && CounterY[5:3]==7 && (endgameblock == 1|| endgameblock2 == 1)));
 	
@@ -174,8 +174,8 @@
 	
 	assign SSD3 = 4'b1111;
 	assign SSD2 = 4'b1111;
-	assign SSD1 = totscore[3:0];
-	assign SSD0 = position[3:0];
+	assign SSD1 = 4'b1111;
+	assign SSD0 = totscore[3:0];
 	
 	// need a scan clk for the seven segment display 
 	// 191Hz (50MHz / 2^18) works well
