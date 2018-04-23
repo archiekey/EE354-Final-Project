@@ -1,2 +1,3 @@
+verilog work "LFSR.v"
 verilog work "hvsync_generator.v"
 verilog work "vga_demo.v"

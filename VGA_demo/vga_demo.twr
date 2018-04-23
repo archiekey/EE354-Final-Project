@@ -32,17 +32,17 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  231 paths analyzed, 68 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   1.806ns.
+ Minimum period is   1.805ns.
 --------------------------------------------------------------------------------
 
-Paths for end point DIV_CLK_19 (SLICE_X30Y51.CIN), 16 paths
+Paths for end point DIV_CLK_19 (SLICE_X30Y50.CIN), 16 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     8.194ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.195ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_0 (FF)
   Destination:          DIV_CLK_19 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.770ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.001ns (0.484 - 0.485)
+  Clock Path Skew:      0.000ns
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -57,23 +57,23 @@ Slack (setup path):     8.194ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y47.AQ      Tcko                  0.447   DIV_CLK<3>
+    SLICE_X30Y46.AQ      Tcko                  0.447   DIV_CLK<3>
                                                        DIV_CLK_0
-    SLICE_X30Y47.A5      net (fanout=1)        0.390   DIV_CLK<0>
-    SLICE_X30Y47.COUT    Topcya                0.379   DIV_CLK<3>
+    SLICE_X30Y46.A5      net (fanout=1)        0.390   DIV_CLK<0>
+    SLICE_X30Y46.COUT    Topcya                0.379   DIV_CLK<3>
                                                        Mcount_DIV_CLK_lut<0>_INV_0
                                                        Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<7>
+    SLICE_X30Y47.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
+    SLICE_X30Y47.COUT    Tbyp                  0.076   DIV_CLK<7>
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CLK     Tcinck                0.314   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.CLK     Tcinck                0.314   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
                                                        DIV_CLK_19
     -------------------------------------------------  ---------------------------
@@ -81,12 +81,12 @@ Slack (setup path):     8.194ns (requirement - (data path - clock path skew + un
                                                        (77.3% logic, 22.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.262ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.274ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_4 (FF)
   Destination:          DIV_CLK_19 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.691ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.012ns (0.152 - 0.164)
+  Clock Path Skew:      0.000ns
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -101,20 +101,20 @@ Slack (setup path):     8.262ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y48.AQ      Tcko                  0.447   DIV_CLK<7>
+    SLICE_X30Y47.AQ      Tcko                  0.447   DIV_CLK<7>
                                                        DIV_CLK_4
-    SLICE_X30Y48.A5      net (fanout=1)        0.390   DIV_CLK<4>
-    SLICE_X30Y48.COUT    Topcya                0.379   DIV_CLK<7>
+    SLICE_X30Y47.A5      net (fanout=1)        0.390   DIV_CLK<4>
+    SLICE_X30Y47.COUT    Topcya                0.379   DIV_CLK<7>
                                                        DIV_CLK<4>_rt
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CLK     Tcinck                0.314   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.CLK     Tcinck                0.314   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
                                                        DIV_CLK_19
     -------------------------------------------------  ---------------------------
@@ -122,12 +122,12 @@ Slack (setup path):     8.262ns (requirement - (data path - clock path skew + un
                                                        (76.4% logic, 23.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.339ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.340ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_3 (FF)
   Destination:          DIV_CLK_19 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.625ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.001ns (0.484 - 0.485)
+  Clock Path Skew:      0.000ns
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -142,23 +142,23 @@ Slack (setup path):     8.339ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y47.DQ      Tcko                  0.447   DIV_CLK<3>
+    SLICE_X30Y46.DQ      Tcko                  0.447   DIV_CLK<3>
                                                        DIV_CLK_3
-    SLICE_X30Y47.D5      net (fanout=1)        0.363   DIV_CLK<3>
-    SLICE_X30Y47.COUT    Topcyd                0.261   DIV_CLK<3>
+    SLICE_X30Y46.D5      net (fanout=1)        0.363   DIV_CLK<3>
+    SLICE_X30Y46.COUT    Topcyd                0.261   DIV_CLK<3>
                                                        DIV_CLK<3>_rt
                                                        Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<7>
+    SLICE_X30Y47.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
+    SLICE_X30Y47.COUT    Tbyp                  0.076   DIV_CLK<7>
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CLK     Tcinck                0.314   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.CLK     Tcinck                0.314   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
                                                        DIV_CLK_19
     -------------------------------------------------  ---------------------------
@@ -167,14 +167,14 @@ Slack (setup path):     8.339ns (requirement - (data path - clock path skew + un
 
 --------------------------------------------------------------------------------
 
-Paths for end point DIV_CLK_17 (SLICE_X30Y51.CIN), 16 paths
+Paths for end point DIV_CLK_17 (SLICE_X30Y50.CIN), 16 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     8.204ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.205ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_0 (FF)
   Destination:          DIV_CLK_17 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.760ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.001ns (0.484 - 0.485)
+  Clock Path Skew:      0.000ns
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -189,23 +189,23 @@ Slack (setup path):     8.204ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y47.AQ      Tcko                  0.447   DIV_CLK<3>
+    SLICE_X30Y46.AQ      Tcko                  0.447   DIV_CLK<3>
                                                        DIV_CLK_0
-    SLICE_X30Y47.A5      net (fanout=1)        0.390   DIV_CLK<0>
-    SLICE_X30Y47.COUT    Topcya                0.379   DIV_CLK<3>
+    SLICE_X30Y46.A5      net (fanout=1)        0.390   DIV_CLK<0>
+    SLICE_X30Y46.COUT    Topcya                0.379   DIV_CLK<3>
                                                        Mcount_DIV_CLK_lut<0>_INV_0
                                                        Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<7>
+    SLICE_X30Y47.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
+    SLICE_X30Y47.COUT    Tbyp                  0.076   DIV_CLK<7>
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CLK     Tcinck                0.304   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.CLK     Tcinck                0.304   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
                                                        DIV_CLK_17
     -------------------------------------------------  ---------------------------
@@ -213,12 +213,12 @@ Slack (setup path):     8.204ns (requirement - (data path - clock path skew + un
                                                        (77.2% logic, 22.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.272ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.284ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_4 (FF)
   Destination:          DIV_CLK_17 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.681ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.012ns (0.152 - 0.164)
+  Clock Path Skew:      0.000ns
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -233,20 +233,20 @@ Slack (setup path):     8.272ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y48.AQ      Tcko                  0.447   DIV_CLK<7>
+    SLICE_X30Y47.AQ      Tcko                  0.447   DIV_CLK<7>
                                                        DIV_CLK_4
-    SLICE_X30Y48.A5      net (fanout=1)        0.390   DIV_CLK<4>
-    SLICE_X30Y48.COUT    Topcya                0.379   DIV_CLK<7>
+    SLICE_X30Y47.A5      net (fanout=1)        0.390   DIV_CLK<4>
+    SLICE_X30Y47.COUT    Topcya                0.379   DIV_CLK<7>
                                                        DIV_CLK<4>_rt
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CLK     Tcinck                0.304   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.CLK     Tcinck                0.304   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
                                                        DIV_CLK_17
     -------------------------------------------------  ---------------------------
@@ -254,12 +254,12 @@ Slack (setup path):     8.272ns (requirement - (data path - clock path skew + un
                                                        (76.3% logic, 23.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.349ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.350ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_3 (FF)
   Destination:          DIV_CLK_17 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.615ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.001ns (0.484 - 0.485)
+  Clock Path Skew:      0.000ns
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -274,23 +274,23 @@ Slack (setup path):     8.349ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y47.DQ      Tcko                  0.447   DIV_CLK<3>
+    SLICE_X30Y46.DQ      Tcko                  0.447   DIV_CLK<3>
                                                        DIV_CLK_3
-    SLICE_X30Y47.D5      net (fanout=1)        0.363   DIV_CLK<3>
-    SLICE_X30Y47.COUT    Topcyd                0.261   DIV_CLK<3>
+    SLICE_X30Y46.D5      net (fanout=1)        0.363   DIV_CLK<3>
+    SLICE_X30Y46.COUT    Topcyd                0.261   DIV_CLK<3>
                                                        DIV_CLK<3>_rt
                                                        Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<7>
+    SLICE_X30Y47.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
+    SLICE_X30Y47.COUT    Tbyp                  0.076   DIV_CLK<7>
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CLK     Tcinck                0.304   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.CLK     Tcinck                0.304   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
                                                        DIV_CLK_17
     -------------------------------------------------  ---------------------------
@@ -299,14 +299,14 @@ Slack (setup path):     8.349ns (requirement - (data path - clock path skew + un
 
 --------------------------------------------------------------------------------
 
-Paths for end point DIV_CLK_20 (SLICE_X30Y52.CIN), 20 paths
+Paths for end point DIV_CLK_20 (SLICE_X30Y51.CIN), 20 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     8.213ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.215ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_0 (FF)
   Destination:          DIV_CLK_20 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.749ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.003ns (0.482 - 0.485)
+  Clock Path Skew:      -0.001ns (0.484 - 0.485)
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -321,26 +321,26 @@ Slack (setup path):     8.213ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y47.AQ      Tcko                  0.447   DIV_CLK<3>
+    SLICE_X30Y46.AQ      Tcko                  0.447   DIV_CLK<3>
                                                        DIV_CLK_0
-    SLICE_X30Y47.A5      net (fanout=1)        0.390   DIV_CLK<0>
-    SLICE_X30Y47.COUT    Topcya                0.379   DIV_CLK<3>
+    SLICE_X30Y46.A5      net (fanout=1)        0.390   DIV_CLK<0>
+    SLICE_X30Y46.COUT    Topcya                0.379   DIV_CLK<3>
                                                        Mcount_DIV_CLK_lut<0>_INV_0
                                                        Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<7>
+    SLICE_X30Y47.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
+    SLICE_X30Y47.COUT    Tbyp                  0.076   DIV_CLK<7>
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.COUT    Tbyp                  0.076   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
-    SLICE_X30Y52.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<19>
-    SLICE_X30Y52.CLK     Tcinck                0.214   DIV_CLK<20>
+    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<19>
+    SLICE_X30Y51.CLK     Tcinck                0.214   DIV_CLK<20>
                                                        Mcount_DIV_CLK_xor<20>
                                                        DIV_CLK_20
     -------------------------------------------------  ---------------------------
@@ -348,12 +348,12 @@ Slack (setup path):     8.213ns (requirement - (data path - clock path skew + un
                                                        (76.8% logic, 23.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.281ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.294ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_4 (FF)
   Destination:          DIV_CLK_20 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.670ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.014ns (0.150 - 0.164)
+  Clock Path Skew:      -0.001ns (0.484 - 0.485)
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -368,23 +368,23 @@ Slack (setup path):     8.281ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y48.AQ      Tcko                  0.447   DIV_CLK<7>
+    SLICE_X30Y47.AQ      Tcko                  0.447   DIV_CLK<7>
                                                        DIV_CLK_4
-    SLICE_X30Y48.A5      net (fanout=1)        0.390   DIV_CLK<4>
-    SLICE_X30Y48.COUT    Topcya                0.379   DIV_CLK<7>
+    SLICE_X30Y47.A5      net (fanout=1)        0.390   DIV_CLK<4>
+    SLICE_X30Y47.COUT    Topcya                0.379   DIV_CLK<7>
                                                        DIV_CLK<4>_rt
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.COUT    Tbyp                  0.076   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
-    SLICE_X30Y52.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<19>
-    SLICE_X30Y52.CLK     Tcinck                0.214   DIV_CLK<20>
+    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<19>
+    SLICE_X30Y51.CLK     Tcinck                0.214   DIV_CLK<20>
                                                        Mcount_DIV_CLK_xor<20>
                                                        DIV_CLK_20
     -------------------------------------------------  ---------------------------
@@ -392,12 +392,12 @@ Slack (setup path):     8.281ns (requirement - (data path - clock path skew + un
                                                        (75.9% logic, 24.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     8.358ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     8.360ns (requirement - (data path - clock path skew + uncertainty))
   Source:               DIV_CLK_3 (FF)
   Destination:          DIV_CLK_20 (FF)
   Requirement:          10.000ns
   Data Path Delay:      1.604ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.003ns (0.482 - 0.485)
+  Clock Path Skew:      -0.001ns (0.484 - 0.485)
   Source Clock:         ClkPort_BUFGP rising at 0.000ns
   Destination Clock:    ClkPort_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.035ns
@@ -412,26 +412,26 @@ Slack (setup path):     8.358ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y47.DQ      Tcko                  0.447   DIV_CLK<3>
+    SLICE_X30Y46.DQ      Tcko                  0.447   DIV_CLK<3>
                                                        DIV_CLK_3
-    SLICE_X30Y47.D5      net (fanout=1)        0.363   DIV_CLK<3>
-    SLICE_X30Y47.COUT    Topcyd                0.261   DIV_CLK<3>
+    SLICE_X30Y46.D5      net (fanout=1)        0.363   DIV_CLK<3>
+    SLICE_X30Y46.COUT    Topcyd                0.261   DIV_CLK<3>
                                                        DIV_CLK<3>_rt
                                                        Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
-    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<7>
+    SLICE_X30Y47.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<3>
+    SLICE_X30Y47.COUT    Tbyp                  0.076   DIV_CLK<7>
                                                        Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
-    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<11>
+    SLICE_X30Y48.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<7>
+    SLICE_X30Y48.COUT    Tbyp                  0.076   DIV_CLK<11>
                                                        Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
-    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<15>
+    SLICE_X30Y49.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<11>
+    SLICE_X30Y49.COUT    Tbyp                  0.076   DIV_CLK<15>
                                                        Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
-    SLICE_X30Y51.COUT    Tbyp                  0.076   DIV_CLK<19>
+    SLICE_X30Y50.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<15>
+    SLICE_X30Y50.COUT    Tbyp                  0.076   DIV_CLK<19>
                                                        Mcount_DIV_CLK_cy<19>
-    SLICE_X30Y52.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<19>
-    SLICE_X30Y52.CLK     Tcinck                0.214   DIV_CLK<20>
+    SLICE_X30Y51.CIN     net (fanout=1)        0.003   Mcount_DIV_CLK_cy<19>
+    SLICE_X30Y51.CLK     Tcinck                0.214   DIV_CLK<20>
                                                        Mcount_DIV_CLK_xor<20>
                                                        DIV_CLK_20
     -------------------------------------------------  ---------------------------
@@ -443,7 +443,7 @@ Slack (setup path):     8.358ns (requirement - (data path - clock path skew + un
 Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point DIV_CLK_20 (SLICE_X30Y52.A6), 1 path
+Paths for end point DIV_CLK_20 (SLICE_X30Y51.A6), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.502ns (requirement - (clock path skew + uncertainty - data path))
   Source:               DIV_CLK_20 (FF)
@@ -459,10 +459,10 @@ Slack (hold path):      0.502ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y52.AQ      Tcko                  0.234   DIV_CLK<20>
+    SLICE_X30Y51.AQ      Tcko                  0.234   DIV_CLK<20>
                                                        DIV_CLK_20
-    SLICE_X30Y52.A6      net (fanout=6)        0.025   DIV_CLK<20>
-    SLICE_X30Y52.CLK     Tah         (-Th)    -0.243   DIV_CLK<20>
+    SLICE_X30Y51.A6      net (fanout=5)        0.025   DIV_CLK<20>
+    SLICE_X30Y51.CLK     Tah         (-Th)    -0.243   DIV_CLK<20>
                                                        DIV_CLK<20>_rt
                                                        Mcount_DIV_CLK_xor<20>
                                                        DIV_CLK_20
@@ -472,7 +472,7 @@ Slack (hold path):      0.502ns (requirement - (clock path skew + uncertainty - 
 
 --------------------------------------------------------------------------------
 
-Paths for end point DIV_CLK_5 (SLICE_X30Y48.B5), 1 path
+Paths for end point DIV_CLK_5 (SLICE_X30Y47.B5), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.529ns (requirement - (clock path skew + uncertainty - data path))
   Source:               DIV_CLK_5 (FF)
@@ -488,10 +488,10 @@ Slack (hold path):      0.529ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y48.BQ      Tcko                  0.234   DIV_CLK<7>
+    SLICE_X30Y47.BQ      Tcko                  0.234   DIV_CLK<7>
                                                        DIV_CLK_5
-    SLICE_X30Y48.B5      net (fanout=1)        0.058   DIV_CLK<5>
-    SLICE_X30Y48.CLK     Tah         (-Th)    -0.237   DIV_CLK<7>
+    SLICE_X30Y47.B5      net (fanout=1)        0.058   DIV_CLK<5>
+    SLICE_X30Y47.CLK     Tah         (-Th)    -0.237   DIV_CLK<7>
                                                        DIV_CLK<5>_rt
                                                        Mcount_DIV_CLK_cy<7>
                                                        DIV_CLK_5
@@ -501,7 +501,7 @@ Slack (hold path):      0.529ns (requirement - (clock path skew + uncertainty - 
 
 --------------------------------------------------------------------------------
 
-Paths for end point DIV_CLK_9 (SLICE_X30Y49.B5), 1 path
+Paths for end point DIV_CLK_9 (SLICE_X30Y48.B5), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.529ns (requirement - (clock path skew + uncertainty - data path))
   Source:               DIV_CLK_9 (FF)
@@ -517,10 +517,10 @@ Slack (hold path):      0.529ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X30Y49.BQ      Tcko                  0.234   DIV_CLK<11>
+    SLICE_X30Y48.BQ      Tcko                  0.234   DIV_CLK<11>
                                                        DIV_CLK_9
-    SLICE_X30Y49.B5      net (fanout=1)        0.058   DIV_CLK<9>
-    SLICE_X30Y49.CLK     Tah         (-Th)    -0.237   DIV_CLK<11>
+    SLICE_X30Y48.B5      net (fanout=1)        0.058   DIV_CLK<9>
+    SLICE_X30Y48.CLK     Tah         (-Th)    -0.237   DIV_CLK<11>
                                                        DIV_CLK<9>_rt
                                                        Mcount_DIV_CLK_cy<11>
                                                        DIV_CLK_9
@@ -546,7 +546,7 @@ Slack: 9.594ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.203ns (Trpw)
   Physical resource: DIV_CLK<3>/SR
   Logical resource: DIV_CLK_0/SR
-  Location pin: SLICE_X30Y47.SR
+  Location pin: SLICE_X30Y46.SR
   Clock network: Sw0_IBUF
 --------------------------------------------------------------------------------
 Slack: 9.594ns (period - (min high pulse limit / (high pulse / period)))
@@ -555,7 +555,7 @@ Slack: 9.594ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.203ns (Trpw)
   Physical resource: DIV_CLK<3>/SR
   Logical resource: DIV_CLK_1/SR
-  Location pin: SLICE_X30Y47.SR
+  Location pin: SLICE_X30Y46.SR
   Clock network: Sw0_IBUF
 --------------------------------------------------------------------------------
 
@@ -572,7 +572,7 @@ Clock to Setup on destination clock ClkPort
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ClkPort        |    1.806|         |         |         |
+ClkPort        |    1.805|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -584,13 +584,13 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 231 paths, 0 nets, and 33 connections
 
 Design statistics:
-   Minimum period:   1.806ns{1}   (Maximum frequency: 553.710MHz)
+   Minimum period:   1.805ns{1}   (Maximum frequency: 554.017MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Apr 18 17:04:57 2018 
+Analysis completed Wed Apr 18 18:28:13 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

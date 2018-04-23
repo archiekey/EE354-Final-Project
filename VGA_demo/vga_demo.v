@@ -57,6 +57,8 @@
 	reg [9:0] endgameblock;
 	reg [9:0] endgameblock2;
 	reg [9:0] endgame2;
+	wire [7:0] randnum;
+	reg enablerand;
 	always @(posedge DIV_CLK[20])
 		begin
 			if(reset)
@@ -71,16 +73,18 @@
 		begin
 			if(reset)
 				bulposx <= 0;
-			else if(bulposx <= 480)
+			else if(bulposx <= 640)
 				begin
 					bulposx <= bulposx + 1;
-					if((bulposx == 320) && ((position > 200 && position < 215)  || (position > 370 && position < 385) || (position > 140 && position < 155)))
+					enablerand <= 0;
+					if((bulposx == 320) && ((position > randnum && position < randnum+15)  || (position > 370 && position < 385) || (position > 140 && position < 155)))
 						endgame <= 1;
 					else
 						endgame <= 0;
 				end
 			else
 				begin
+					enablerand <= 1;
 					score <= score + 1;
 					bulposx <= 0;
 				end
@@ -104,6 +108,8 @@
 					bulposx2 <= 0;
 				end
 		end
+			
+		
 		always @(posedge endgame[0])
 		begin
 			if(reset)
@@ -121,11 +127,13 @@
 		
 		end
 	
+	LFSR rand(.clk(DIV_CLK[16]),.reset(reset),.out(randnum),.enable(enablerand));
+	
 	assign totscore = score + score2;
 	wire R = CounterY>=(position-10) && CounterY<=(position+10) && (CounterX>280&&  CounterX< 320) || ((CounterX >100) && (CounterX < 300) && CounterY[5:3]==7 && (endgameblock == 1|| endgameblock2 == 1));
-	wire G = (CounterX>=(bulposx-5) && CounterX<=(bulposx+5) && ((CounterY > 200 && CounterY < 215)  || (CounterY > 370 && CounterY < 385) || (CounterY > 140 && CounterY < 155)) ); 
+	wire G = (CounterX>=(bulposx-5) && CounterX<=(bulposx+5) && ((CounterY > randnum && CounterY < randnum + 15)  || (CounterY > 370 && CounterY < 385) || (CounterY > 140 && CounterY < 155)) || ((CounterX >100) && (CounterX < 300) && CounterY[5:3]==7 && (endgameblock == 1|| endgameblock2 == 1)) ); 
 	wire B = ((CounterX>=(bulposx2-5) && CounterX<=(bulposx2+5) && ((CounterY < 140 && CounterY > 150) || (CounterY > 250 && CounterY < 260) || (CounterY >300 && CounterY < 310) )) || ((CounterX >100) && (CounterX < 300) && CounterY[5:3]==7 && (endgameblock == 1|| endgameblock2 == 1)));
-	
+		
 	always @(posedge clk)
 	begin
 		vga_r <= R & inDisplayArea;
@@ -172,8 +180,8 @@
 	wire 	[3:0]	SSD0, SSD1, SSD2, SSD3;
 	wire 	[1:0] ssdscan_clk;
 	
-	assign SSD3 = 4'b1111;
-	assign SSD2 = 4'b1111;
+	assign SSD3 = randnum[7:4];
+	assign SSD2 = randnum[3:0];
 	assign SSD1 = 4'b1111;
 	assign SSD0 = totscore[3:0];
 	
